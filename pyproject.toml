@@ -1,0 +1,7 @@
+[project]
+name = "pac-bayes-root-finding"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
