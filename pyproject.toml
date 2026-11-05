@@ -1,7 +1,21 @@
 [project]
 name = "pac-bayes-root-finding"
 version = "0.1.0"
-description = "Add your description here"
+description = "Numerical inversion of the binary KL divergence for tight PAC-Bayes generalization bounds."
 readme = "README.md"
-requires-python = ">=3.11"
-dependencies = []
+requires-python = ">=3.10"
+dependencies = ["numpy"]
+keywords = ["pac-bayes", "generalization-bounds", "root-finding", "machine-learning"]
+
+[dependency-groups]
+dev = ["pytest", "pytest-cov"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/pac_bayes_root_finding"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
